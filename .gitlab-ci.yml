@@ -1,0 +1,26 @@
+image: docker:latest
+
+stages:
+  - build
+
+build-win32-installer:
+  stage: build
+  image: $IMAGE
+  script:
+    - .ci/windows/build.sh 32
+  artifacts:
+    paths: [ "*.exe" ]
+    expire_in: 1 day
+
+build-win64-installer:
+  stage: build
+  image: $IMAGE
+  script:
+    - .ci/windows/build.sh 64
+  artifacts:
+    paths: [ "*.exe" ]
+    expire_in: 1 day
+
+variables:
+  GIT_SUBMODULE_STRATEGY: normal
+  IMAGE: $CI_REGISTRY/veyon/ci-mingw-w64:4.3

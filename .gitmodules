@@ -1,0 +1,20 @@
+[submodule "3rdparty/ultravnc"]
+	path = 3rdparty/ultravnc
+	url = https://github.com/veyon/ultravnc.git
+[submodule "3rdparty/kldap"]
+	path = 3rdparty/kldap
+	url = https://anongit.kde.org/kldap.git
+[submodule "3rdparty/libvncserver"]
+	path = 3rdparty/libvncserver
+	url = https://github.com/veyon/libvncserver.git
+[submodule "3rdparty/x11vnc"]
+	path = 3rdparty/x11vnc
+	url = https://github.com/veyon/x11vnc.git
+[submodule "3rdparty/kitemmodels"]
+	path = 3rdparty/kitemmodels
+	url = https://anongit.kde.org/kitemmodels.git
+	branch = master
+[submodule "3rdparty/libfakekey"]
+	path = 3rdparty/libfakekey
+	url = git://git.yoctoproject.org/libfakekey
+	branch = master

@@ -1,0 +1,12 @@
+.vagrant/*
+.DS_Store
+svg
+Makefile
+plugins/addons
+plugins/extra
+build/
+build-SOWebServer-Desktop-Debug/
+/CMakeLists.txt.user
+SOWebServer/SOWebServer.pro.user
+
+
